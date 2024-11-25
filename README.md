@@ -1,0 +1,1 @@
+# check-entra-id-sp-expiration
