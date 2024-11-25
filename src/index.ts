@@ -4,7 +4,7 @@ import { TokenCredentialAuthenticationProvider } from '@microsoft/microsoft-grap
 import { Application } from './types'
 
 (async () => {
-    const daysUntilExpiration = Number(process.env.DAY_UNTIL_EXPIRATION || '60')
+    const daysUntilExpiration = Number(process.env.DAYS_UNTIL_EXPIRATION || '60')
     const credential = new AzureCliCredential()
 
     const authProvider = new TokenCredentialAuthenticationProvider(credential, {

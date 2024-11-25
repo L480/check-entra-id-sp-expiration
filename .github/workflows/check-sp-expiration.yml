@@ -16,7 +16,7 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-      - name: Azure login
+      - name: Login to Azure
         uses: azure/login@v2
         with:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
@@ -30,4 +30,4 @@ jobs:
       - name: Check for soon-to-expire service principal secrets
         run: npm run start
         env:
-          DAY_UNTIL_EXPIRATION: 60
+          DAYS_UNTIL_EXPIRATION: 60
