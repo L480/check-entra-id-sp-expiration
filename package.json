@@ -9,6 +9,6 @@
     "@microsoft/microsoft-graph-client": "^3.0.7"
   },
   "scripts": {
-    "start": "npm ci && npx ts-node index.ts --yes"
+    "start": "npm ci && npx ts-node src/index.ts --yes"
   }
 }
