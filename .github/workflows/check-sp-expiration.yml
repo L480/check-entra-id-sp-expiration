@@ -1,6 +1,7 @@
 name: Check for soon-to-expire service principal secrets
 
 on:
+  pull_request:
   workflow_dispatch:
   schedule:
     - cron: '0 15 * * *' # 17:00 CEST / 16:00 CET
