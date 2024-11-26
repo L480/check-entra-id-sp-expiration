@@ -4,6 +4,8 @@
 
 Checks for expiring Entra ID service principal secrets.
 
+The GitHub action fails if secrets are found that are about to expire (by default within the next [60 days](.github/workflows/check-sp-expiration.yml#L34)).
+
 ## Setup
 
 1. Create a new repository from this template.
