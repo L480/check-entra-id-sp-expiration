@@ -1,15 +1,13 @@
-export interface Application {
+type Application = {
   appId: string
   displayName: string
-  passwordCredentials: PasswordCredential[]
-}
-
-export interface PasswordCredential {
-  customKeyIdentifier: any
-  displayName: string
-  endDateTime: string
-  hint: string
-  keyId: string
-  secretText: any
-  startDateTime: string
+  passwordCredentials: Array<{
+    customKeyIdentifier: any
+    displayName: string
+    endDateTime: string
+    hint: string
+    keyId: string
+    secretText: any
+    startDateTime: string
+  }>
 }
