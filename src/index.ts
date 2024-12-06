@@ -1,6 +1,7 @@
 import { AzureCliCredential } from '@azure/identity'
 import { Client } from '@microsoft/microsoft-graph-client'
 import { TokenCredentialAuthenticationProvider } from '@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials'
+import { Application } from './types'
 
 (async () => {
     const daysUntilExpiration = Number(process.env.DAYS_UNTIL_EXPIRATION || '60')

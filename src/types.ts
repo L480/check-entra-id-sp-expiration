@@ -1,4 +1,4 @@
-type Application = {
+export type Application = {
   appId: string
   displayName: string
   passwordCredentials: Array<{
