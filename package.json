@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@microsoft/microsoft-graph-types": "^2.40.0",
+    "@microsoft/microsoft-graph-types": "^2.43.1",
     "@types/node": "^24.0.4",
     "typescript": "^5.8.3"
   },
